@@ -1,0 +1,12 @@
+<div class="container_card bg-dark my-2">
+  <div class="wrapper">
+    <IMG class="banner-image" src="{{product.img}}">
+    <h1>{{product.name.slice(0,12)}}<span *ngIf="product.name.length>12">...</span></h1>
+    <p>Lorem ipsum dolor sit amet, <br/>
+      consectetur adipiscing elit.</p>
+  </div>
+  <div class="button-wrapper">
+    <a routerLink="/detail/{{product.id}}" class="btn outline">DETAILS</a>
+    <button class="btn fill">BUY NOW</button>
+  </div>
+</div>
